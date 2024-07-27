@@ -1,5 +1,7 @@
 import Image from "next/image";
-
+export const metadata = {
+  title: process.env.NEXT_PUBLIC_TITLE,
+};
 export default function Home() {
   const isDev = process.env.NODE_ENV === "development";
   return (
